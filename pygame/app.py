@@ -44,6 +44,18 @@ while running :
                 color = orange
             elif temp * 5 - length // 2  < x < temp * 5 + length // 2 and 570 > y > 500 :
                 color = yellow
+            elif temp - length // 2 < x < temp + length // 2 and 370 > y > 300 :
+                color = green
+            elif temp * 3 - length // 2  < x < temp * 3 + length // 2 and 370 > y > 300 :
+                color = blue
+            elif temp * 5 - length // 2 < x < temp * 5 + length // 2 and 370 > y > 300 :
+                color = navy
+            elif temp - length // 2  < x < temp + length // 2 and 170 > y > 100 :
+                color = purple
+            elif temp * 3 - length // 2 < x < temp * 3 + length // 2 and 170 > y > 100 :
+                color = white
+            elif temp * 5 - length // 2  < x < temp * 5 + length // 2 and 170 > y > 100 :
+                color = black
     
     (targetx, targety) = pygame.mouse.get_pos()
     dx = targetx - posx
