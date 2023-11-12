@@ -9,6 +9,9 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Game")
 posx = screen_width // 2
 posy = screen_height // 2
+rad = 40
+xspeed = 0.1
+yspeed = 0.1
 
 running = True #게임 진행 여부에 대한 변수 True : 게임 진행 중
 while running :
@@ -16,13 +19,21 @@ while running :
         if event.type == pygame.QUIT : #창을 닫는 이벤트 발생했는가?
             running = False
     
-    screen.fill((0 , 0 , 0))
-    posx += 0.1
-    posy += 0.1
+    screen.fill((255, 255, 255))
+    posx += xspeed
+    posy += yspeed
 
-    if
+    if posx + rad >= screen_width :
+        xspeed *= -1
+    elif posx + rad <= screen_width :
+        xspeed *= -1
+    if posy + rad >= screen_height :
+        yspeed *= -1
+    elif posy + rad <= screen_height :
+        yspeed *= -1
 
-    pygame.draw.circle(screen, (255, 255, 0), (posx, posy), 10)
+
+    pygame.draw.circle(screen, (0, 0, 0), (posx, posy), rad)
     pygame.display.update()
 
 

@@ -18,12 +18,12 @@ pos_easing = 0.003
 rad = 20
 
 red = (255, 0, 0)
-orange = (255, 112, 18)
+orange = (255, 165, 0)
 yellow = (255, 255, 0)
 green = (0, 255, 0)
 blue = (0, 0, 255)
 navy = (0, 0, 128)
-purple = (255, 0, 255)
+purple = (148, 0, 211)
 black = (0, 0, 0)
 white = (255, 255, 255)
 
